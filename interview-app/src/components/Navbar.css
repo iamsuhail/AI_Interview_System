@@ -1,0 +1,18 @@
+/* Navbar.css */
+
+.navbar {
+    display:flex; 
+    background-color: #282828;
+    color: #ffffff;
+    padding: 1rem; 
+    text-align: center;
+    justify-content: center;
+}
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  

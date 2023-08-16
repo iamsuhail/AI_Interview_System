@@ -1,0 +1,23 @@
+/* UploadButton.css */
+
+.upload-button {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    background-color: #3500D3;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+label:hover {
+    background-color: #3500D3;
+}

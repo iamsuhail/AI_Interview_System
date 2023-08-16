@@ -1,0 +1,24 @@
+/* QuestionCard.css */
+
+.question-card {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #555555;
+}
+
+p {
+    color: #333333;
+    white-space: pre-wrap;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+}
