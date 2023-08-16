@@ -11,7 +11,7 @@ function App() {
 
   const generateQuestions = async () => {
     try {
-      const apiKey = "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";
+      const apiKey = "OpenAI_API_key";
       const prompt = `Generate 2 technical interview questions related to ${topic}.`;
 
       const response = await axios.post(
