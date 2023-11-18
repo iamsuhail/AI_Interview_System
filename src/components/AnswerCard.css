@@ -1,0 +1,99 @@
+.microphone-wrapper{
+    /* background-color: #3500D3; */
+    background: linear-gradient(to left top,#00AA45,black);
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: 5rem;
+
+}
+.microphone-wrapper h2{
+    color: rgb(0, 0, 0);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.mircophone-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 50vh;
+  }
+  .microphone-icon-container {
+    width: 100pxpx;
+    height: 100px;
+    border-radius: 70%;
+    background-image: linear-gradient(128deg, black, #00AA45);
+    padding: 20px;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  .microphone-status{
+    color: white;
+  }
+  .microphone-icon-container.listening::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%) scale(1.4);
+    border-radius: 50%;
+    animation: listening infinite 1.5s;
+  }
+  @keyframes listening{
+    0%{
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100%{
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+  .microphone-icon {
+    width: 100%;
+    height: 100%;
+  }
+  .microphone-status {
+    font-size: 22px;
+    margin-right: 20px;
+    min-width: 215px;
+  }
+  .btn {
+    border: none;
+    padding: 10px 30px;
+    margin-right: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 5px #ffffff1a;
+  }
+  .microphone-result-container {
+    text-align: center;
+    background-color: #ffffff;
+    height: 50vh;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    border-radius: 8px;
+  
+  }
+  .microphone-result-text {
+    margin-bottom: 30px;
+    width: 70vw;
+    overflow-y: auto;
+  }
+  .microphone-reset {
+    border: 1px solid #fff;
+    background: none;
+    color: rgb(6, 6, 6);
+    width: fit-content;
+  }

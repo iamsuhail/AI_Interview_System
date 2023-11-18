@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+}
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: black;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999; /* so that it stays on top of all other elements */
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  
+  background-image: linear-gradient(93deg, rgba(255, 255, 255, 0.21) 35.02%, rgba(249, 253, 250, 0.20) 36.38%, rgba(223, 244, 230, 0.18) 41.97%, rgba(15, 170, 70, 0.00) 87.43%);
+  /* background-image: linear-gradient(rgb(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65)); */
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+}
+ 
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  
+}
+ 
+/* .logo {
+  width: 180px;
+  cursor: pointer;
+} */
+
+  
+.logo_container a {
+  color: #000000;
+  text-decoration: none;
+  color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+  text-align: right;
+  /* padding-right: 60px; */
+}
+ 
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+ 
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  color: #000;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+nav li a:hover {
+  color:#00AA45 !important;
+  transition: 0.3s;
+}
+
+/* nav li a.active {
+  background-color: #eee;
+  color: #b20000;
+  padding: 20px 20px;
+  border-radius: 10px;
+} */
+ 
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  background: #00AA45;
+  color: #ffffff;
+  font-weight: 400;
+  cursor: pointer;
+}
+.btn_sec {
+  display: flex;
+  align-items: center;
+  padding: 13px 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 0px 6px 6px 0px;
+  background: #000000;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+ 
+.btn img {
+  width: 20px;
+  margin-right: 10px;
+}
+.file-upload-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-label {
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px; /* Add margin to create space between the button and the selected file */
+}
+
+.upload-button {
+  padding: 10px;
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.upload-button:hover {
+  background-color: #27ae60;
+}
+.content {
+  margin-top: 8%;
+  width: 100%;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  /* max-width: 620px; */
+}
+.hero-text {
+  text-align: center;
+  position: relative;
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* color: white; */
+}
+.content_span
+{
+color: #01A944;
+font-family: Alice;
+}
+.content_para
+{
+color: #000;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.content_alice
+{
+color: #000;
+font-family: Alice;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-top: 20px;
+}
+ 
+.content h1 {
+  color: #000000;
+font-family: Alice;
+font-size: 50px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+ 
+.content form {
+  display: flex;
+  /* align-items: center; */
+  /* background: #ffffff; */
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 30px;
+  justify-content: center;
+  
+}
+
+input[type=text]
+{
+    border: 1px solid rgb(228, 228, 228) !important ;
+    padding: 10px;
+    border-radius: 12px 0px 0px 12px;
+
+}
+ 
+.content form  {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  font-size: 16px;
+  padding-left: 10px;
+  /* border-color: 1px solid red; */
+}
+ 
+.content form .btn {
+  font-size: 15px;
+  /* padding: 10px 30px; */
+}
+
+.question-card p{
+  color: #000000;
+
+}
+.question_output{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /* position: relative; */
+
+
+}
